@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veo 3 Prompt Generator by Agung Prakasa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Veo 3 Prompt Generator by Agung Prakasa</h1>
+        <div class="form-container">
+            <div class="form-column">
+                <label for="subjek">1. Subjek</label>
+                <input type="text" id="subjek" placeholder="Contoh: Seorang astronot">
+
+                <label for="aksi">2. Aksi</label>
+                <input type="text" id="aksi" placeholder="Contoh: berjalan di permukaan Mars">
+
+                <label for="ekspresi">3. Ekspresi</label>
+                <input type="text" id="ekspresi" placeholder="Contoh: dengan wajah takjub">
+
+                <label for="tempat">4. Tempat</label>
+                <input type="text" id="tempat" placeholder="Contoh: di kawah Gale">
+            </div>
+            <div class="form-column">
+                <label for="waktu">5. Waktu</label>
+                <select id="waktu">
+                    <option value="siang hari">Siang Hari</option>
+                    <option value="sore hari">Sore Hari</option>
+                    <option value="malam hari">Malam Hari</option>
+                    <option value="matahari terbit">Matahari Terbit (Sunrise)</option>
+                    <option value="matahari terbenam">Matahari Terbenam (Sunset)</option>
+                    <option value="golden hour">Golden Hour</option>
+                    <option value="blue hour">Blue Hour</option>
+                </select>
+
+                <label for="gerakan-kamera">6. Gerakan Kamera</label>
+                <select id="gerakan-kamera">
+                    <option value="">Pilih Gerakan Kamera</option>
+                    <optgroup label="Gerakan Umum">
+                        <option value="Arc Left">Arc Left (Melingkar ke Kiri)</option>
+                        <option value="Arc Right">Arc Right (Melingkar ke Kanan)</option>
+                        <option value="Crane Down">Crane Down (Derek Turun)</option>
+                        <option value="Crane Up">Crane Up (Derek Naik)</option>
+                        <option value="Dolly In">Dolly In (Maju)</option>
+                        <option value="Dolly Left">Dolly Left (Geser ke Kiri)</option>
+                        <option value="Dolly Out">Dolly Out (Mundur)</option>
+                        <option value="Dolly Right">Dolly Right (Geser ke Kanan)</option>
+                        <option value="Handheld">Handheld (Genggam)</option>
+                        <option value="Jib Down">Jib Down (Jib Turun)</option>
+                        <option value="Jib Up">Jib Up (Jib Naik)</option>
+                        <option value="Tilt Down">Tilt Down (Miring ke Bawah)</option>
+                        <option value="Tilt up">Tilt up (Miring ke Atas)</option>
+                        <option value="Whip Pan">Whip Pan (Geser Cepat)</option>
+                        <option value="Zoom In">Zoom In (Perbesar)</option>
+                        <option value="Zoom Out">Zoom Out (Perkecil)</option>
+                    </optgroup>
+                    <optgroup label="Gerakan Sinematik (Higgsfield)">
+                        <option value="360 Orbit">360 Orbit (Orbit 360)</option>
+                        <option value="3D Rotation">3D Rotation (Rotasi 3D)</option>
+                        <option value="Action Run">Action Run (Lari Aksi)</option>
+                        <option value="Agent Reveal">Agent Reveal (Pengungkapan Agen)</option>
+                        <option value="Angel Wings">Angel Wings (Sayap Malaikat)</option>
+                        <option value="Bloom Mouth">Bloom Mouth (Mulut Mekar)</option>
+                        <option value="Buckle Up">Buckle Up (Kencangkan Sabuk)</option>
+                        <option value="Bullet Time">Bullet Time</option>
+                        <option value="Car Chasing">Car Chasing (Pengejaran Mobil)</option>
+                        <option value="Car Explosion">Car Explosion (Ledakan Mobil)</option>
+                        <option value="Car Grip">Car Grip (Cengkeraman Mobil)</option>
+                        <option value="Crash Zoom In">Crash Zoom In (Zoom Masuk Cepat)</option>
+                        <option value="Crash Zoom Out">Crash Zoom Out (Zoom Keluar Cepat)</option>
+                        <option value="Datamosh">Datamosh</option>
+                        <option value="Dirty Lens">Dirty Lens (Lensa Kotor)</option>
+                        <option value="Disintegration">Disintegration (Disintegrasi)</option>
+                        <option value="Dolly Zoom In">Dolly Zoom In (Dolly Zoom Masuk)</option>
+                        <option value="Dolly Zoom Out">Dolly Zoom Out (Dolly Zoom Keluar)</option>
+                        <option value="Double Dolly">Double Dolly</option>
+                        <option value="Dutch Angle">Dutch Angle (Sudut Belanda)</option>
+                        <option value="Eyes In">Eyes In (Mata Masuk)</option>
+                        <option value="Face Punch">Face Punch (Pukulan Wajah)</option>
+                        <option value="Fisheye">Fisheye (Mata Ikan)</option>
+                        <option value="Floating Fish">Floating Fish (Ikan Melayang)</option>
+                        <option value="Flood">Flood (Banjir)</option>
+                        <option value="Floral Eyes">Floral Eyes (Mata Bunga)</option>
+                        <option value="Flying">Flying (Terbang)</option>
+                        <option value="Focus Change">Focus Change (Perubahan Fokus)</option>
+                        <option value="FPV Drone">FPV Drone</option>
+                        <option value="Garden Bloom">Garden Bloom (Taman Mekar)</option>
+                        <option value="General">General (Umum)</option>
+                        <option value="Glam">Glam (Glamor)</option>
+                        <option value="Glowshift">Glowshift</option>
+                        <option value="Head Explosion">Head Explosion (Ledakan Kepala)</option>
+                        <option value="Head Tracking">Head Tracking (Pelacakan Kepala)</option>
+                        <option value="Hyperlapse">Hyperlapse</option>
+                        <option value="Incline">Incline (Miring)</option>
+                        <option value="Invisible">Invisible (Tak Terlihat)</option>
+                        <option value="Jelly Drift">Jelly Drift</option>
+                        <option value="Kiss">Kiss (Ciuman)</option>
+                        <option value="Lazy Susan">Lazy Susan</option>
+                        <option value="Lens Crack">Lens Crack (Lensa Retak)</option>
+                        <option value="Lens Flare">Lens Flare</option>
+                        <option value="Levitation">Levitation (Levitasi)</option>
+                        <option value="Low Shutter">Low Shutter</option>
+                        <option value="Medusa Gorgona">Medusa Gorgona</option>
+                        <option value="Melting">Melting (Meleleh)</option>
+                        <option value="Morphskin">Morphskin</option>
+                        <option value="Mouth In">Mouth In (Mulut Masuk)</option>
+                        <option value="Push To Glass">Push To Glass (Dorong ke Kaca)</option>
+                        <option value="Rap Flex">Rap Flex</option>
+                        <option value="Robo Arm">Robo Arm (Lengan Robot)</option>
+                        <option value="Set on Fire">Set on Fire (Terbakar)</option>
+                        <option value="Skin Surge">Skin Surge (Gelombang Kulit)</option>
+                        <option value="Snorricam">Snorricam</option>
+                        <option value="Soul Jump">Soul Jump (Lompatan Jiwa)</option>
+                        <option value="Static">Static (Statis)</option>
+                        <option value="Super Dolly In">Super Dolly In</option>
+                        <option value="Super Dolly Out">Super Dolly Out</option>
+                        <option value="Symbiote">Symbiote</option>
+                        <option value="Tentacles">Tentacles (Tentakel)</option>
+                        <option value="Thunder God">Thunder God (Dewa Petir)</option>
+                        <option value="Timelapse Human">Timelapse Human (Timelapse Manusia)</option>
+                        <option value="Timelapse Landscape">Timelapse Landscape (Timelapse Pemandangan)</option>
+                        <option value="Turning Metal">Turning Metal (Logam Berputar)</option>
+                        <option value="Wiggle">Wiggle (Bergoyang)</option>
+                        <option value="Wind to Face">Wind to Face (Angin ke Wajah)</option>
+                        <option value="YoYo Zoom">YoYo Zoom</option>
+                    </optgroup>
+                </select>
+
+                <label for="pencahayaan">7. Pencahayaan</label>
+                <select id="pencahayaan">
+                    <option value="sinematik">Sinematik</option>
+                    <option value="dramatis">Dramatis</option>
+                    <option value="lembut">Lembut</option>
+                    <option value="terang">Terang</option>
+                    <option value="gelap">Gelap</option>
+                    <option value="neon">Neon</option>
+                    <option value="alami">Alami</option>
+                </select>
+
+                <label for="gaya-video">8. Gaya Video</label>
+                <select id="gaya-video">
+                    <option value="realistis">Realistis</option>
+                    <option value="surealis">Surealis</option>
+                    <option value="animasi">Animasi</option>
+                    <option value="hitam putih">Hitam Putih</option>
+                    <option value="vintage">Vintage</option>
+                    <option value="fantasi">Fantasi</option>
+                    <option value="fiksi ilmiah">Fiksi Ilmiah</option>
+                </select>
+            </div>
+            <div class="form-column">
+                <label for="suasana-video">9. Suasana Video</label>
+                <select id="suasana-video">
+                    <option value="ceria">Ceria</option>
+                    <option value="sedih">Sedih</option>
+                    <option value="misterius">Misterius</option>
+                    <option value="menegangkan">Menegangkan</option>
+                    <option value="romantis">Romantis</option>
+                    <option value="epik">Epik</option>
+                    <option value="tenang">Tenang</option>
+                </select>
+
+                <label for="suara">10. Suara atau Musik</label>
+                <input type="text" id="suara" placeholder="Contoh: Suara angin dan musik orkestra epik">
+
+                <label for="kalimat">11. Kalimat yang diucapkan</label>
+                <input type="text" id="kalimat" placeholder="Contoh: 'Ini langkah kecil bagi manusia...'">
+
+                <label for="detail">12. Detail Tambahan</label>
+                <input type="text" id="detail" placeholder="Contoh: Debu merah beterbangan, terlihat Bumi di kejauhan">
+            </div>
+        </div>
+        <button id="generate-btn">Buat Prompt</button>
+        <div class="output-container">
+            <div class="output-column">
+                <h2>Prompt Bahasa Indonesia (Dapat Diedit)</h2>
+                <textarea id="output-id"></textarea>
+            </div>
+            <div class="output-column">
+                <h2>Prompt Bahasa Inggris (Final)</h2>
+                <textarea id="output-en" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
